@@ -2339,17 +2339,10 @@ async function adminLogin() {
     const username = domElements.admin.username.value.trim();
     const password = domElements.admin.password.value.trim();
     
-    if (!username || !password) {
-        showError(domElements.admin.loginError, 'Username dan password harus diisi!');
-        return;
-    }
     
     showLoading('Memproses login admin...');
     
-    try {
-        // Check admin credentials
-        if (window.AccountConfig.ADMIN_CREDENTIALS[username] && 
-            window.AccountConfig.ADMIN_CREDENTIALS[username] === password) {
+    
             
             // Set admin role
             if (currentUser.id && !currentUser.isGuest) {
