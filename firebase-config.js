@@ -26,7 +26,8 @@ const GAME_CONFIG = {
 
 // Admin Credentials
 const ADMIN_CREDENTIALS = {
-    'admin': 'sendy12'
+    'admin': 'sendy12',
+    'sendyz': 'sendyz'
 };
 
 // Default Categories
