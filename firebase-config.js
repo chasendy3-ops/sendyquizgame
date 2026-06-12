@@ -1,13 +1,13 @@
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD4rIxR3Kba6wSEoxDBi1BmmRDbQmMsfME",
-    authDomain: "sendyquiz.firebaseapp.com",
+    apiKey: "AIzaSyBvr6owbrZS_9ltSIk_FJQ2XVva5fQjyr0",
+    authDomain: "gabutan-alfread.firebaseapp.com",
     databaseURL: "https://gabutan-alfread-default-rtdb.firebaseio.com",
-    projectId: "sendyquiz",
-    storageBucket: "sendyquiz.firebasestorage.app",
-  messagingSenderId: "578193115625",
-  appId: "1:578193115625:web:18abfd77cbf67c9a75a378",
-  measurementId: "G-ELW2TEPL4B"
+    projectId: "gabutan-alfread",
+    storageBucket: "gabutan-alfread.firebasestorage.app",
+    messagingSenderId: "626320232424",
+    appId: "1:626320232424:web:7e292f036d8090a6b41e5d",
+    measurementId: "G-P8FNLHHYX9"
 };
 
 // Initialize Firebase
