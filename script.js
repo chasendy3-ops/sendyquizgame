@@ -2348,13 +2348,13 @@ async function adminLogin() {
     
     try {
         // Check admin credentials
-        if (window.firebaseConfig.ADMIN_CREDENTIALS[username] && 
-            window.firebaseConfig.ADMIN_CREDENTIALS[username] === password) {
+        if (window.accountconfig.ADMIN_CREDENTIALS[username] && 
+            window.accountconfig.ADMIN_CREDENTIALS[username] === password) {
             
             // Set admin role
             if (currentUser.id && !currentUser.isGuest) {
                 // Update existing user to admin
-                const userRef = window.firebaseConfig.database.ref('users/' + currentUser.id);
+                const userRef = window.accountconfig.database.ref('users/' + currentUser.id);
                 await userRef.update({
                     role: username === 'developer' ? 'developer' : 'admin',
                     isAdmin: true
