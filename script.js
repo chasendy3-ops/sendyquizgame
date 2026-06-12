@@ -308,8 +308,8 @@ async function login() {
     
     try {
         // Check if admin login
-        if (window.firebaseConfig.ADMIN_CREDENTIALS[username] && 
-            window.firebaseConfig.ADMIN_CREDENTIALS[username] === password) {
+        if (window.AccountConfig.ADMIN_CREDENTIALS[username] && 
+            window.AccountConfig.ADMIN_CREDENTIALS[username] === password) {
             
             // Admin login
             currentUser = {
@@ -424,7 +424,7 @@ async function register() {
         }
         
         // Check if username is admin
-        if (window.firebaseConfig.ADMIN_CREDENTIALS[username]) {
+        if (window.AccountConfig.ADMIN_CREDENTIALS[username]) {
             showError(domElements.auth.registerError, 'Username tidak tersedia!');
             hideLoading();
             return;
@@ -2348,8 +2348,8 @@ async function adminLogin() {
     
     try {
         // Check admin credentials
-        if (window.accountconfig.ADMIN_CREDENTIALS[username] && 
-            window.accountconfig.ADMIN_CREDENTIALS[username] === password) {
+        if (window.AccountConfig.ADMIN_CREDENTIALS[username] && 
+            window.AccountConfig.ADMIN_CREDENTIALS[username] === password) {
             
             // Set admin role
             if (currentUser.id && !currentUser.isGuest) {

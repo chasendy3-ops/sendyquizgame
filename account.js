@@ -3,7 +3,7 @@ const ADMIN_CREDENTIALS = {
     'developer': 'dev123'
 };
 
-window.accountconfig = {
+window.AccountConfig = {
     ADMIN_CREDENTIALS
 };
 
