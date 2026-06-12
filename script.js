@@ -2339,6 +2339,14 @@ async function adminLogin() {
     const username = domElements.admin.username.value.trim();
     const password = domElements.admin.password.value.trim();
     
+    if (!username || !password) {
+        showError(domElements.admin.loginError, 'Username dan password harus diisi!');
+        return;
+    }
+
+    try {
+        // Check admin credentials
+        if (username: 'sendy':'sendy1') {
     
     showLoading('Memproses login admin...');
     
